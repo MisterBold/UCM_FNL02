@@ -858,10 +858,21 @@ footer.foot .inn .inner.textography{
         width: 95%;
     }
 
-
     .right{
         display: none;
     }
+
+    
+    .left ul{
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 1em 0em; */
+    }
+
+    .left ul li a{
+        font-size: 4em;
+    }
+
 }
 
 @media screen and (max-height: 932px) {
