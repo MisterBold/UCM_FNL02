@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --oceanic-noir: #172b36;
+    --slightly-noir: #0e1b22;
+    --deep-saffron: #ff9932;
+    --forsythia: #ffc801;
+    --mystic-mint: #d9e8e3;
+    --nocturnal-expedition: #114c5a;
+    --nocturnal-expedition-lgt: #166174;
+    --arctic-powder: #f1f6f4;
+}
+
+body{
+    background: var(--oceanic-noir);
+    transition: .3s ease-in;
+}
+
+body.actv{
+    background: var(--slightly-noir);
+}
+
+.burger{
+    position: absolute;
+    left: 50%;
+    top: 50dvh;
+    width: 120px;
+    height: 100px;
+    padding: 25px;
+    background: var(--nocturnal-expedition);
+    transform: translate(-50%,-50%);
+    transition: .3s ease-in;
+}
+
+.burger.actv{
+    border-radius: 20px;
+}
+
+.burger:hover{
+    cursor: pointer;
+    background: var(--nocturnal-expedition-lgt);
+}
+
+.bar{
+    position: relative;
+    height: 80%;
+    transform: rotate(45deg);
+}
+
+.bar::before,
+.bar::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 50%;
+    background: var(--arctic-powder);
+}
+
+.bar::before{
+    top: 50%;
+    left: 0%;
+    transform: rotate(90deg);
+    
+}
+
+.bar::after{
+    top: 50%;
+    transform: translate(-50%);
+    background: var(--forsythia);
+}
