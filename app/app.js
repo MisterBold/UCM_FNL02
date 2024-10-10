@@ -11,7 +11,7 @@ const IOsections=document.querySelectorAll('.io')
 const ImptntSections=document.querySelectorAll('.importantSect')
 const SecondarySections=document.querySelectorAll('.secondaryImptnt')
 const secOneImg=document.querySelector('section.on img')
-const LetterHead=document.querySelector('.lttrhd img')
+const LetterHead=document.querySelector('body > header + img')
 const lttheadsrcs=['./res/img/ucmlgo05.png', './res/img/ucmlgoblck01.png']
 
 const imgsrcs={
@@ -26,34 +26,32 @@ const barsBef=document.querySelector('.bar::before')
 const barsAft=document.querySelector('.bar::after')
 
 theNav.addEventListener('click',()=>{
-    main.classList.toggle('actv')
-    bars.classList.toggle('actv')
     allMayneToggles()
 })
 
-// mainLftrLi.forEach(li=>{
-//     li.addEventListener('mouseenter',()=>{
-//         mainRytrImg.setAttribute('src',`${li.getAttribute('data-imgsrc')}`)
-//         ImageOverlayImg.setAttribute('src',`${li.getAttribute('data-imgsrc')}`)
-//         console.log(li.getAttribute('data-imgsrc'))
-//         console.log(`..${li.getAttribute('data-imgsrc')}`)
-//         main.style.background=`url(..${li.getAttribute('data-imgsrc')})`
-        
-//     })
-    
-//     li.addEventListener('mouseleave',()=>{
-//         mainRytrImg.classList.toggle('blrr')
-        
-//     })
-    
-//     li.addEventListener('click',()=>{
-//         allMayneToggles()
-    
-//     })
-// })
+mainLftrLi.forEach(li=>{
 
-// burger.onclick=()=>{
-// }
+    allMayneToggles()
+
+    li.addEventListener('mouseenter',()=>{
+        mainRytrImg.setAttribute('src',`${li.getAttribute('data-imgsrc')}`)
+        ImageOverlayImg.setAttribute('src',`${li.getAttribute('data-imgsrc')}`)
+        // console.log(li.getAttribute('data-imgsrc'))
+        // console.log(`..${li.getAttribute('data-imgsrc')}`)
+        main.style.background=`url(..${li.getAttribute('data-imgsrc')})`
+        
+    })
+    
+    li.addEventListener('mouseleave',()=>{
+        mainRytrImg.classList.toggle('blrr')
+        
+    })
+    
+    li.addEventListener('click',()=>{
+        allMayneToggles()
+    
+    })
+})
 
 function allMayneToggles() {
     // bars.classList.toggle('actv')
@@ -66,12 +64,21 @@ function allMayneToggles() {
     // footr.classList.toggle('down')
     // headr.classList.toggle('down')
     
+    main.classList.toggle('actv')
+    bars.classList.toggle('actv')
+    
+    setTimeout(()=>{
+        LetterHead.classList.toggle('norm')
+        theNav.classList.toggle('norm')
+        // console.log('1 second')
+    }, 200)
+
     let theDiv=175
     
     for(let ind=0; ind < mainLftrLi.length*theDiv; ind+=theDiv){
         setTimeout(()=>{
             mainLftrLi[ind/theDiv].classList.toggle('chng')
-            console.log(mainLftrLi[ind/theDiv].textContent)
+            // console.log(mainLftrLi[ind/theDiv].textContent)
         }, ind)
     }
     
@@ -85,37 +92,37 @@ burger.addEventListener('mouseover',()=>{
     burger.style.cursor='pointer'
 })
 
-const theIO01=new IntersectionObserver(entries=>{
-    entries.forEach((entry, i)=>{
-        if (entry.isIntersecting){
-            console.log(entry.target.className, `${Math.round(entry.intersectionRatio*100)}%`)
-            headr.style.backdropFilter='blur(10px)'
-            LetterHead.setAttribute('src','./res/img/ucmlgo05.png')
-            bars.classList.toggle('actv02')
-        } else{
-            bars.classList.toggle('actv02')
-            headr.style.backdropFilter='blur(0px)'
-            LetterHead.setAttribute('src','./res/img/ucmlgoblck01.png')
-        }
-    })
-}, {threshold: .4})
+// const theIO01=new IntersectionObserver(entries=>{
+//     entries.forEach((entry, i)=>{
+//         if (entry.isIntersecting){
+//             console.log(entry.target.className, `${Math.round(entry.intersectionRatio*100)}%`)
+//             headr.style.backdropFilter='blur(10px)'
+//             LetterHead.setAttribute('src','./res/img/ucmlgo05.png')
+//             bars.classList.toggle('actv02')
+//         } else{
+//             bars.classList.toggle('actv02')
+//             headr.style.backdropFilter='blur(0px)'
+//             LetterHead.setAttribute('src','./res/img/ucmlgoblck01.png')
+//         }
+//     })
+// }, {threshold: .4})
 
-const theIO02=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        if (entry.isIntersecting){
-            console.log(entry.target.className, `${Math.round(entry.intersectionRatio*100)}%`)
-            headr.style.backdropFilter='blur(10px)'
-            // headr.style.background='orangered'
-            LetterHead.setAttribute('src','./res/img/ucmlgo05.png')
-            // bars.classList.toggle('actv02')
-        } else{
-            bars.classList.toggle('actv02')
-            // headr.style.background='deeppink'
-            headr.style.backdropFilter='blur(10px)'
-            LetterHead.setAttribute('src','./res/img/ucmlgo05.png')
-        }
-    })
-}, {threshold: .6})
+// const theIO02=new IntersectionObserver(entries=>{
+//     entries.forEach(entry=>{
+//         if (entry.isIntersecting){
+//             console.log(entry.target.className, `${Math.round(entry.intersectionRatio*100)}%`)
+//             headr.style.backdropFilter='blur(10px)'
+//             // headr.style.background='orangered'
+//             LetterHead.setAttribute('src','./res/img/ucmlgo05.png')
+//             // bars.classList.toggle('actv02')
+//         } else{
+//             bars.classList.toggle('actv02')
+//             // headr.style.background='deeppink'
+//             headr.style.backdropFilter='blur(10px)'
+//             LetterHead.setAttribute('src','./res/img/ucmlgo05.png')
+//         }
+//     })
+// }, {threshold: .6})
 
 // ImptntSections.forEach(sectn=>{
 //     theIO01.observe(sectn)
