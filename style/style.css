@@ -75,11 +75,12 @@ body > header{
 body > header + img{
     position: fixed;
     top: .5rem;
-    width: 120px;
+    object-fit: contain;
+    width: 100px;
     height: auto;
     z-index: 9;
     mix-blend-mode: difference;
-    margin: 18.5px 27.5px;
+    margin: 18.5px 20px;
 }
 
 body > header + img.norm{
@@ -91,10 +92,10 @@ body > header + img + nav{
     top: .5rem;
     right: 0px;
     width: 60px;
-    height: 45.14px;
+    height: 42.5px;
     z-index: 9;
     mix-blend-mode: difference;
-    margin: 18.5px 15px;
+    margin: 16px 10px;
 }
 
 body > header + img + nav.norm{
@@ -139,7 +140,7 @@ body > header + img + nav + main{
 .bar{
     position: relative;
     height: 50%;
-    width: 37.5px;
+    width: 30px;
     transition: .6s var(--slow-fast);
 }
 
@@ -873,7 +874,7 @@ footer.foot .inn .inner.textography{
     }
 
     .left{
-        height: 75%;
+        height: 65%;
         margin-left: 0px;
     }
 
@@ -885,7 +886,7 @@ footer.foot .inn .inner.textography{
     }
 
     .left ul li a{
-        font-size: 4em;
+        font-size: 2.75em;
     }
 
 }
