@@ -52,7 +52,7 @@ body > header{
     top: 0px;
     left: 50%;
     transform: translate(-50%);
-    
+
     width: 50%;
     height: 5em;
     display: flex;
@@ -118,7 +118,7 @@ body > header + img + nav + main{
     display: flex;
     align-items: center;
     overflow: hidden;
-    
+
 }
 
 .mayne.actv{
@@ -179,7 +179,7 @@ body > header + img + nav + main{
     top: 50%;
     left: 0%;
     transform: translate(0%) rotate(90deg);
-    
+
 }
 
 .bar.actv::after{
@@ -204,7 +204,7 @@ body > header + img + nav + main{
     margin-left: 27.5px;
     padding: 5em 0em;
     width: 100%;
-    height: 75%; 
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -260,7 +260,7 @@ body > header + img + nav + main{
     overflow: hidden;
     position: relative;
     /* backdrop-filter: blur(10px); */
-    
+
 }
 
 .right > img{
@@ -473,12 +473,12 @@ section.fo main{
     display: -ms-grid;
     grid-template-rows: 1fr;
     place-items: center;
-    
+
 }
 
 section.fo header h2{
     font: 4em amagro;
-    
+
 }
 
 section.fo main .cont{
@@ -571,60 +571,148 @@ section.fo main .cont{
 
 footer.foot{
     width: 100%;
-    height: 100dvh;
-    /* background: var(--brwn); */
-    background: url(../res/img/Logo\ Brown\ Artboard\ 2.jpg);
+    /* height: 100dvh; */
+    background: url(../res/img/Logo\ Brown\ Artboard\ 3\ copy.webp);
     background-attachment: fixed;
     overflow: hidden;
+    padding: 1% 0%;
 }
 
 footer.foot .inn{
-    background: teal;
+    /* background: teal; */
     width: 100%;
     height: 100%;
-    padding: 1.5%;
+    padding: 0% 2.5%;
 }
 
 footer.foot .inn .inner.paragraphs{
-    background: cyan;
-    padding: 10px;
+    width: 100%;
+    /* background: cyan; */
+    /* padding: 10px; */
     display: grid;
     display: -ms-grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
 footer.foot .inn .inner.paragraphs .para{
-    padding: 10px;
-    width: 88.5%;
+    padding: 15px;
+    width: 100%;
 }
 
 footer.foot .inn .inner.paragraphs .para header{
-    background: peru;
+    /* background: peru; */
     display: grid;
     display: -ms-grid;
+    width: 100%;
+    padding: 10px;
+}
+
+footer.foot .inn .inner.paragraphs .para header span{
+    font: 400 1.5em Poppins;
+    color: white;
+}
+
+footer.foot .inn .inner.paragraphs .para main span,
+footer.foot .inn .inner.paragraphs .para main a{
+    text-decoration: none;
+    font: 200 1.2em Poppins;
+    color: white;
+
+}
+
+footer.foot .inn .inner.paragraphs .para.tw main a{
+    color: springgreen;
+    font-weight: 300;
+}
+footer.foot .inn .inner.paragraphs .para.on main a{
+    color: rgb(78, 169, 255);
+    font-weight: 300;
 }
 
 footer.foot .inn .inner.paragraphs .para main{
-    background: plum;
+    padding: 10px;
+    /* background: plum; */
     display: flex;
     flex-direction: column;
-    
+
+}
+
+footer.foot .inn .inner.paragraphs .para main span,
+footer.foot .inn .inner.paragraphs .para main .main_inn .soc{
+    padding: 5px;
+}
+
+footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a{
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer.foot .inn .inner.paragraphs .para.on main a,
+footer.foot .inn .inner.paragraphs .para.tw main a{
+    position: relative;
+}
+
+
+footer.foot .inn .inner.paragraphs .para.on main a::before,
+footer.foot .inn .inner.paragraphs .para.tw main a::before{
+    position: absolute;
+    content: '';
+    background: springgreen;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    transition: .2s ease-in;
+}
+
+footer.foot .inn .inner.paragraphs .para.on main a::before{
+    background: rgb(78, 169, 255);
+}
+
+footer.foot .inn .inner.paragraphs .para main a:hover{
+    &::before{
+        width: 17.5px;
+        /* transform: translateX(-25px); */
+    }
+
+    transform: translateX(30px);
+
+}
+
+footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a h3{
+    color: white;
+    font: 200 1.2em Poppins;
+
+}
+
+footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a .ico{
+    margin-right: 10px;
+}
+
+footer.foot .inn .inner.paragraphs .para main .main_inn .soc a .ico img{
+    object-fit: contain;
+    width: 30px;
+    height: auto;
+
 }
 
 footer.foot .inn .inner.paragraphs .para.on{
-    background: orange;
+    /* background: orange; */
 }
 
 footer.foot .inn .inner.paragraphs .para.tw{
-    background: orangered;
+    /* background: orangered; */
 }
 
 footer.foot .inn .inner.paragraphs .para.th{
-    background: maroon;
+    /* background: maroon; */
 }
 
 footer.foot .inn .inner.textography{
-    background: goldenrod;
+    padding: 10px;
+    /* background: goldenrod; */
 }
 /*************************************Fluidity**************************************/
 
@@ -641,23 +729,23 @@ footer.foot .inn .inner.textography{
         background: white;
     }
 
-    
+
     section.th{
         grid-template-columns: 65% 1fr;
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
     section.on .wrds p{
         font-size: 5em;
     }
-    
+
     section.th{
         display: flex;
-        
+
     }
-    
+
     section.th .lft{
         /* background: url(../res/img/notepad02.jpg); */
         background: transparent;
@@ -680,19 +768,29 @@ footer.foot .inn .inner.textography{
         width: 100%;
         height: auto;
     }
-    
+
     section.th .ryt .overlay{
         z-index: 1;
         backdrop-filter: blur(5px);
     }
 
+
     .serv{
         grid-template-columns: none;
         grid-template-rows: 75% 1fr;
         place-items: center;
-        background: white;
+        box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075),
+                inset 15px 10px 25px rgba(0, 0, 0, 0.055);
+        border-radius: 20px;
     }
-    
+
+    .serv.on, .serv.th{
+        /* background: linear-gradient(-45deg, white, rgba(0, 0, 0, 0.075)); */
+        background: none;
+        box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075),
+                    inset 15px 10px 25px rgba(0, 0, 0, 0.055);
+    }
+
     .serv::before{
         width: 0px;
     }
@@ -700,41 +798,41 @@ footer.foot .inn .inner.textography{
     .serv::after{
         width: 0px;
     }
-    
-    
+
+
     .serv .lft span{
         width: 100%;
         text-align: center;
     }
-    
+
     .serv.fo,
     .serv.tw{
         grid-template-columns: none;
         grid-template-rows: 75% 1fr;
         place-items: center;
     }
-    
+
     .serv.fo .lft,
     .serv.tw .lft{
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    
+
     .serv .lft{
         height: 100%;
     }
-    
+
     .serv .ryt img{
         width: 70%;
     }
-    
+
     .serv.on .lft,
     .serv.th .lft{
         order: 1;
         width: 100%;
     }
-    
+
     .serv.on .ryt,
     .serv.th .ryt{
         order: -1;
@@ -742,7 +840,7 @@ footer.foot .inn .inner.textography{
 }
 
 @media screen and (max-width: 948px) {
-    
+
     footer.foot .inn .inner.paragraphs .para main{
         align-items: center;
     }
@@ -756,15 +854,15 @@ footer.foot .inn .inner.textography{
     section.on .wrds p{
         font-size: 4em;
     }
-    
+
     section.tw h1{
         font-size: 2.5em;
     }
-    
+
     .serv{
         height: 70%;
     }
-    
+
     .serv .lft span{
         transform: translateY(20%);
     }
@@ -774,30 +872,27 @@ footer.foot .inn .inner.textography{
     section.tw h1{
         font-size: 2em;
     }
-    
+
     section.th .lft header h2{
         font-size: 2.6em;
     }
-    
+
     section.tw p,
     section.th .lft main.tw p{
         font-size:2em;
     }
-    
+
     .serv .ryt img{
         width: 90%;
     }
-    
+
     .serv .lft span{
         transform: translateY(0%);
     }
 }
 
 @media screen and (max-width: 590px) {
-    section.tw p{
-        width: 100%;
-    }
-    
+
     section.th .lft{
         padding: 60px 40px;
         justify-content: space-evenly;
@@ -808,17 +903,13 @@ footer.foot .inn .inner.textography{
         left: 0px;
     }
 
-    section.th .lft main.tw p{
-        font-size: 1.7em;
-    }
-    
 }
 
 @media screen and (max-width: 505px) {
     section.tw{
         overflow: scroll;
     }
-    
+
     section.tw p{
         font-size: 1.5em;
     }
@@ -830,36 +921,37 @@ footer.foot .inn .inner.textography{
         right: 100%;
         transform: translateX(calc(100% + 40px));
     }
-    
+
     section.on .wrds p{
         font-size: 3em;
     }
     section.on .wrds p:nth-child(2){
         margin-top: 20px;
     }
-    
+
     section.tw h1{
         font-size: 2em;
         width: 85%;
     }
-    
+
     section.fo{
         padding: 2.5% 30px;
     }
 
-    
+
     section.fo header h2{
         text-align: center;
         transform: translate(0%, 50%);
     }
-    
+
     .serv .ryt img{
         width: 75%;
     }
-    
+
     .serv .lft{
         justify-content: center;
     }
+
     .serv .lft span{
         width: 90%;
     }
@@ -889,6 +981,54 @@ footer.foot .inn .inner.textography{
         font-size: 2.75em;
     }
 
+    .serv .lft span {
+        transform: translateY(-30%);
+    }
+
+    footer.foot .inn{
+        padding: 0% 0%;
+    }
+
+
+    footer.foot .inn .inner.paragraphs{
+        grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .serv .lft span{
+        font-size: 2.25em;
+    }
+
+    section.tw {
+        justify-content: space-between;
+        padding: 15% 40px;
+    }
+
+    section.th .lft main.tw p,
+    section.tw p {
+        font-size: 1.55em;
+    }
+
+    footer.foot{
+        padding: 5% 0%;
+    }
+
+
+    footer.foot .inn .inner.paragraphs{
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    }
+
+    
+    footer.foot .inn .inner.paragraphs .para header span{
+        font-size: 1em;
+    }
+
+    footer.foot .inn .inner.paragraphs .para main span,
+    footer.foot .inn .inner.paragraphs .para main a{
+        font-size: 1em;
+
+    }   
 }
 
 @media screen and (max-height: 932px) {
@@ -902,9 +1042,9 @@ footer.foot .inn .inner.textography{
 @media screen and (max-height: 667px) {
     section.tw {
         justify-content: space-between;
-        padding: 25% 40px;
+        padding: 12.5% 40px;
     }
-    
+
     section.tw h1{
         font-size: 1.75em;
     }
