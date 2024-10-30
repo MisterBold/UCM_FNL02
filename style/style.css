@@ -93,7 +93,7 @@ body > header + img + nav{
     right: 0px;
     width: 60px;
     height: 42.5px;
-    z-index: 9;
+    z-index: 19;
     mix-blend-mode: difference;
     margin: 16px 10px;
 }
@@ -671,7 +671,7 @@ footer.foot .inn .inner.paragraphs .para main a{
     text-decoration: none;
     font: 200 1.2em Poppins;
     color: white;
-
+    
 }
 
 footer.foot .inn .inner.paragraphs .para.tw main a{
@@ -688,7 +688,7 @@ footer.foot .inn .inner.paragraphs .para main{
     /* background: plum; */
     display: flex;
     flex-direction: column;
-
+    
 }
 
 footer.foot .inn .inner.paragraphs .para main span,
@@ -731,15 +731,15 @@ footer.foot .inn .inner.paragraphs .para main a:hover{
         width: 17.5px;
         /* transform: translateX(-25px); */
     }
-
+    
     transform: translateX(30px);
-
+    
 }
 
 footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a h3{
     color: white;
     font: 200 1.2em Poppins;
-
+    
 }
 
 footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a .ico{
@@ -750,7 +750,7 @@ footer.foot .inn .inner.paragraphs .para main .main_inn .soc a .ico img{
     object-fit: contain;
     width: 30px;
     height: auto;
-
+    
 }
 
 footer.foot .inn .inner.paragraphs .para.on{
@@ -783,24 +783,24 @@ footer.foot .inn .inner.textography{
     .bar.actv::after{
         background: white;
     }
-
-
+    
+    
     section.th{
         grid-template-columns: 65% 1fr;
     }
-
+    
 }
 
 @media screen and (max-width: 1200px) {
     section.on .wrds p{
         font-size: 5em;
     }
-
+    
     section.th{
         display: flex;
-
+        
     }
-
+    
     section.th .lft{
         /* background: url(../res/img/notepad02.jpg); */
         background: transparent;
@@ -808,7 +808,7 @@ footer.foot .inn .inner.textography{
         z-index: 2;
         /* mix-blend-mode: screen; */
     }
-
+    
     section.th .ryt{
         position: absolute;
         top: 0px;
@@ -816,90 +816,97 @@ footer.foot .inn .inner.textography{
         background: black;
         /* transform: translate(-100%); */
     }
-
+    
     section.th .ryt img{
         transform: translate(0%);
         object-fit: contain;
         width: 100%;
         height: auto;
     }
-
+    
     section.th .ryt .overlay{
         z-index: 1;
         backdrop-filter: blur(5px);
     }
-
-
+    
+    
     .serv{
         grid-template-columns: none;
         grid-template-rows: 75% 1fr;
         place-items: center;
         box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075),
-                inset 15px 10px 25px rgba(0, 0, 0, 0.055);
+        inset 15px 10px 25px rgba(0, 0, 0, 0.055);
         border-radius: 20px;
     }
-
+    
     .serv.on, .serv.th{
         /* background: linear-gradient(-45deg, white, rgba(0, 0, 0, 0.075)); */
         background: none;
         box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075),
-                    inset 15px 10px 25px rgba(0, 0, 0, 0.055);
+        inset 15px 10px 25px rgba(0, 0, 0, 0.055);
     }
-
+    
     .serv::before{
         width: 0px;
     }
-
+    
     .serv::after{
         width: 0px;
     }
-
-
+    
+    
     .serv .lft span{
         width: 100%;
         text-align: center;
     }
-
+    
     .serv.fo,
     .serv.tw{
         grid-template-columns: none;
         grid-template-rows: 75% 1fr;
         place-items: center;
     }
-
+    
     .serv.fo .lft,
     .serv.tw .lft{
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
+    
     .serv .lft{
         height: 100%;
     }
-
+    
     .serv .ryt img{
         width: 70%;
     }
-
+    
     .serv.on .lft,
     .serv.th .lft{
         order: 1;
         width: 100%;
     }
-
+    
     .serv.on .ryt,
     .serv.th .ryt{
         order: -1;
     }
 }
 
-@media screen and (max-width: 948px) {
+@media screen and (max-width: 1024px) {
+    .cont main{
+        flex-direction: column;
+    }
+    
+}
 
+@media screen and (max-width: 948px) {
+    
     footer.foot .inn .inner.paragraphs .para main{
         align-items: center;
     }
-
+    
     footer.foot .inn .inner.paragraphs .para header{
         place-items: center;
     }
@@ -909,7 +916,7 @@ footer.foot .inn .inner.textography{
     section.on .wrds p{
         font-size: 4em;
     }
-
+    
     section.tw h1{
         font-size: 2.5em;
     }
