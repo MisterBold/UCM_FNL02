@@ -41,6 +41,11 @@
     src: url(../res/fonts/Amagro-bold.ttf);
 }
 
+@font-face {
+    font-family: pari2024;
+    src: url(../res/fonts/Paris2024-Variable.ttf);
+}
+
 .txt_trans{
     transition: .3s var(--orbit);
 }
