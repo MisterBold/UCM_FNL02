@@ -593,7 +593,7 @@ section.fo main .cont{
 
 .cont header h2{
     color: hsl(300, 24%, 30%);
-    font-family: Paris2024-Variable;
+    font-family: pari2024;
     font-size: clamp(1.3em,2em,3em);
     text-transform: uppercase;
 }
