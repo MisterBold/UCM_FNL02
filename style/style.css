@@ -109,7 +109,7 @@ body > header + img + nav + main{
     width: 100%;
     height: 100%;
     background: var(--brwn);
-    z-index: 5;
+    z-index: 7;
     transform: translateX(-100%);
     transition: .4s var(--fast-slow);
 }
@@ -278,12 +278,61 @@ body > header + img + nav + main{
     height: 100%;
 }
 
+/***************************************************<IMAGE OVERLAY>**************************************************/
+
 .img.ovrlay img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(75%);
 }
+
+.imgovrlay{
+    z-index: 6;
+    position: fixed;
+    width: 100%;
+    height: 100dvh;
+    top: 0px;
+    left: 0%;
+    background: hsla(0, 0%, 0%, 0.75);
+    backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+    
+}
+
+.imgovrlay > .inn{
+    /* background: darkolivegreen; */
+    border-radius: 20px;
+    /* width: 55%;
+    height: 75dvh; */
+    /* overflow: hidden; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgovrlay > .inn > img{
+    object-fit: cover;
+    border-radius: 20px;
+    width: 75%;
+    height: auto;
+    /* background: url(../res/img/UCM%20Gallery/Birthday\ Portraiture-1.JPG); */
+    /* background-size: cover; */
+}
+
+.imgovrlay > .inn span.imgtitle{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    font: 400 1em Poppins;
+    color: orange;
+}
+
+/***************************************************</IMAGE OVERLAY>**************************************************/
 
 section{
     width: 100%;
@@ -588,7 +637,7 @@ section.fo main .cont{
 
 .cont header h2{
     color: hsl(300, 24%, 30%);
-    font-family: Paris2024-Variable;
+    font-family: Pari;
     font-size: clamp(1.3em,2em,3em);
     text-transform: uppercase;
 }
