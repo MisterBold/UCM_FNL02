@@ -983,7 +983,6 @@ footer.foot .inn .inner.textography{
 
 @media screen and (max-width: 430px) {
     section.on .wrds{
-        /* width: 90%; */
         right: 100%;
         transform: translateX(calc(100% + 40px));
     }
@@ -991,6 +990,7 @@ footer.foot .inn .inner.textography{
     section.on .wrds p{
         font-size: 3em;
     }
+
     section.on .wrds p:nth-child(2){
         margin-top: 20px;
     }
@@ -1000,10 +1000,14 @@ footer.foot .inn .inner.textography{
         width: 85%;
     }
 
+    section.tw p {
+        font-size: 1.5em;
+        width: 95%;
+    }
+    
     section.fo{
         padding: 2.5% 30px;
     }
-
 
     section.fo header h2{
         text-align: center;
@@ -1020,11 +1024,6 @@ footer.foot .inn .inner.textography{
 
     .serv .lft span{
         width: 90%;
-    }
-
-    section.tw p {
-        font-size: 1.75em;
-        width: 95%;
     }
 
     .right{
@@ -1055,10 +1054,12 @@ footer.foot .inn .inner.textography{
         padding: 0% 0%;
     }
 
-
     footer.foot .inn .inner.paragraphs{
         grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
     }
+
+
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -1093,14 +1094,14 @@ footer.foot .inn .inner.textography{
     footer.foot .inn .inner.paragraphs .para main span,
     footer.foot .inn .inner.paragraphs .para main a{
         font-size: 1em;
-
+        
     }   
 }
 
 @media screen and (max-height: 932px) {
     section.tw {
         justify-content: space-around;
-        padding: 40% 40px;
+        padding: 30% 40px;
     }
 }
 
@@ -1108,10 +1109,14 @@ footer.foot .inn .inner.textography{
 @media screen and (max-height: 667px) {
     section.tw {
         justify-content: space-between;
-        padding: 12.5% 40px;
+        padding: 15% 40px;
     }
 
     section.tw h1{
-        font-size: 1.75em;
+        font-size: 1.5em;
+    }
+    
+    section.tw p {
+        font-size: 1.3em
     }
 }
