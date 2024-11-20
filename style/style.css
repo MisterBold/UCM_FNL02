@@ -83,7 +83,7 @@ body > header + img{
     object-fit: contain;
     width: 100px;
     height: auto;
-    z-index: 9;
+    z-index: 19;
     mix-blend-mode: difference;
     margin: 18.5px 20px;
 }
@@ -298,7 +298,7 @@ section{
 section.on.down,
 section.tw.down,
 section.fo.down,
-section.th.down,
+section.th.home.down,
 footer.foot.down{
     left: 100%;
 }
@@ -359,51 +359,75 @@ section.tw{
     padding: 15% 100px;
 }
 
+section.th.biz{
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    padding: 0px 40px 50px 40px;
+    
+}
+
+section.th.biz h1,
 section.tw h1{
     width: 75%;
     text-align: left;
     text-transform: capitalize;
-    font: 300 4em amagro;
+    font: 300 2.3em amagro;
 }
 
-section.sec.tw{
-    background: #fff;
-    color: var(--oceanic-noir);
+section.th.biz h1{
+    place-self: center flex-start;
 }
 
-section.sec.tw h1{
-    margin-bottom: 5%;
+section.th.biz ul{
+    width: 100%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+
+section.th.biz ul li{
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(to right, #E95D00 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075),
+    inset 15px 10px 25px rgba(0, 0, 0, 0.055);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 50px;
+    
+}
+
+section.th.biz ul li:hover{
+    background-position: left bottom;
 }
 
 
-section.tw ul{
-    width: 90%;
-}
-
-section.tw ul li{
-    transform: translate(5%);
-    margin-bottom: 15px;
-}
-
-section.tw p{
+section.tw p,
+section.th.biz p{
     margin-top: 1%;
     width: 80%;
     text-align: left;
     font: 100 1.8em Inter;
 }
 
-section.sec.tw p{
-    font-weight: 300;
+section.th.biz ul li p{
+    text-align: center;
+    font-weight: 200;
 }
 
-section.th{
+section.th.home{
     position: relative;
     display: grid;
     display: -ms-grid;
     grid-template-columns: 50% 50%;
 }
 
-section.th .ryt{
+section.th.home .ryt{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -414,13 +438,13 @@ section.th .ryt{
 }
 
 
-section.th .ryt img{
+section.th.home .ryt img{
     object-fit: cover;
     height: 100%;
     transform: translate(-25%);
 }
 
-section.th .lft{
+section.th.home .lft{
     background: black;
     padding: 15% 100px;
     display: flex;
@@ -429,21 +453,21 @@ section.th .lft{
     align-items: flex-start;
 }
 
-section.th .lft header h2{
+section.th.home .lft header h2{
     text-align: left;
     text-transform: uppercase;
     font: 100 4em amagro;
     color: var(--arctic-powder);
 }
 
-section.th .lft main.tw p{
+section.th.home .lft main.tw p{
     margin-top: 2%;
     font: 100 2.3em Inter;
     color: var(--arctic-powder);
     z-index: 3;
 }
 
-section.th .ryt .overlay{
+section.th.home .ryt .overlay{
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, black, transparent);
@@ -777,12 +801,10 @@ footer.foot .inn .inner.paragraphs .para main .main_inn .soc a .ico img{
     
 }
 
-<<<<<<< HEAD
 footer.foot .inn .inner.textography{
     padding: 10px;
 }
-=======
->>>>>>> 8c290721b004d3da924075e406e3619b9bffdb81
+
 /*************************************Fluidity**************************************/
 
 @media screen and (max-width: 1400px) {
@@ -799,7 +821,7 @@ footer.foot .inn .inner.textography{
     }
     
     
-    section.th{
+    section.th.home{
         grid-template-columns: 65% 1fr;
     }
     
@@ -810,12 +832,12 @@ footer.foot .inn .inner.textography{
         font-size: 5em;
     }
     
-    section.th{
+    section.th.home{
         display: flex;
         
     }
     
-    section.th .lft{
+    section.th.home .lft{
         /* background: url(../res/img/notepad02.jpg); */
         background: transparent;
         background-size: contain;
@@ -823,7 +845,7 @@ footer.foot .inn .inner.textography{
         /* mix-blend-mode: screen; */
     }
     
-    section.th .ryt{
+    section.th.home .ryt{
         position: absolute;
         top: 0px;
         left: 0px;
@@ -831,14 +853,14 @@ footer.foot .inn .inner.textography{
         /* transform: translate(-100%); */
     }
     
-    section.th .ryt img{
+    section.th.home .ryt img{
         transform: translate(0%);
         object-fit: contain;
         width: 100%;
         height: auto;
     }
     
-    section.th .ryt .overlay{
+    section.th.home .ryt .overlay{
         z-index: 1;
         backdrop-filter: blur(5px);
     }
@@ -950,12 +972,12 @@ footer.foot .inn .inner.textography{
         font-size: 2em;
     }
 
-    section.th .lft header h2{
+    section.th.home .lft header h2{
         font-size: 2.6em;
     }
 
     section.tw p,
-    section.th .lft main.tw p{
+    section.th.home .lft main.tw p{
         font-size:2em;
     }
 
@@ -970,7 +992,7 @@ footer.foot .inn .inner.textography{
 
 @media screen and (max-width: 590px) {
 
-    section.th .lft{
+    section.th.home .lft{
         padding: 60px 40px;
         justify-content: space-evenly;
         position: absolute;
@@ -1006,12 +1028,23 @@ footer.foot .inn .inner.textography{
         margin-top: 20px;
     }
 
-    section.tw h1{
+    section.th.home h1{
         font-size: 2em;
         width: 85%;
     }
 
-    section.tw p {
+    
+    section.th.biz{
+        height: 165dvh;
+    }
+
+    section.th.biz ul li{
+        width: 275px;
+        height: 250px;
+    }
+    
+    section.tw p,
+    section.th.biz p {
         font-size: 1.5em;
         width: 95%;
     }
@@ -1087,7 +1120,7 @@ footer.foot .inn .inner.textography{
         padding: 15% 40px;
     }
 
-    section.th .lft main.tw p,
+    section.th.home .lft main.tw p,
     section.tw p {
         font-size: 1.55em;
     }
