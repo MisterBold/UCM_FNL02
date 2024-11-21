@@ -377,12 +377,28 @@ section.sec.tw h1{
 
 
 section.tw ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
     width: 90%;
+    padding: 2.5%;
 }
 
 section.tw ul li{
     transform: translate(5%);
     margin-bottom: 15px;
+    width: 250px;
+    height: 200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 2.5%;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075),
+        inset 15px 10px 25px rgba(0, 0, 0, 0.055);
+
+    
 }
 
 section.tw p{
@@ -390,6 +406,11 @@ section.tw p{
     width: 80%;
     text-align: left;
     font: 100 1.8em Inter;
+}
+
+section.tw ul li p{
+    width: auto;
+    text-align: center;
 }
 
 section.sec.tw p{
@@ -777,12 +798,10 @@ footer.foot .inn .inner.paragraphs .para main .main_inn .soc a .ico img{
     
 }
 
-<<<<<<< HEAD
 footer.foot .inn .inner.textography{
     padding: 10px;
 }
-=======
->>>>>>> 8c290721b004d3da924075e406e3619b9bffdb81
+
 /*************************************Fluidity**************************************/
 
 @media screen and (max-width: 1400px) {
