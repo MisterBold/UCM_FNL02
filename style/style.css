@@ -403,18 +403,21 @@ section.th.biz ul li{
 }
 
 section.th.biz ul li.biz.quote{
+    padding: 25px 50px;
     height: auto;
     background: var(--deep-saffron);
     
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 section.th.biz ul li.biz.quote p{
-    
+    background: var(--oceanic-noir);
 }
 
 section.th.biz ul li.biz.quote ul{
+    height: 150px;
     background: var(--nocturnal-expedition);
     display: flex;
     flex-direction: column;
@@ -426,8 +429,20 @@ section.th.biz ul li.biz.quote ul li{
     height: 0px;
     background: none;
     box-shadow: none;
-    border: 2px solid  var(--forsythia);
+    /* border: 2px solid  var(--forsythia); */
     padding: 20px;
+}
+
+section.th.biz ul li.biz.quote ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font: 200 1.3em Inter;
+}
+
+section.th.biz ul li.biz.quote ul li:nth-child(1){
+    /* background: red; */
+    transform: translate(0px, 50%);
 }
 
 section.th.biz ul li:hover{
@@ -459,7 +474,6 @@ section.tw ul li{
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075),
         inset 15px 10px 25px rgba(0, 0, 0, 0.055);
 
-    
 }
 
 section.tw p,
