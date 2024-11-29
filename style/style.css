@@ -402,12 +402,41 @@ section.th.biz ul li{
     
 }
 
+section.th.biz ul li.biz.quote{
+    height: auto;
+    background: var(--deep-saffron);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+section.th.biz ul li.biz.quote p{
+    
+}
+
+section.th.biz ul li.biz.quote ul{
+    background: var(--nocturnal-expedition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.th.biz ul li.biz.quote ul li{
+    height: 0px;
+    background: none;
+    box-shadow: none;
+    border: 2px solid  var(--forsythia);
+    padding: 20px;
+}
+
 section.th.biz ul li:hover{
     background-position: left bottom;
 }
 
 
-<<<<<<< HEAD
+
+
 section.tw ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -433,30 +462,17 @@ section.tw ul li{
     
 }
 
-section.tw p{
-=======
 section.tw p,
 section.th.biz p{
->>>>>>> fce686a969fb99217653b7dbda6a223afc6a7c06
     margin-top: 1%;
     width: 80%;
     text-align: left;
     font: 100 1.8em Inter;
 }
 
-<<<<<<< HEAD
-section.tw ul li p{
-    width: auto;
-    text-align: center;
-}
-
-section.sec.tw p{
-    font-weight: 300;
-=======
 section.th.biz ul li p{
     text-align: center;
     font-weight: 200;
->>>>>>> fce686a969fb99217653b7dbda6a223afc6a7c06
 }
 
 section.th.home{
@@ -1202,11 +1218,16 @@ footer.foot .inn .inner.textography{
         padding: 15% 40px;
     }
 
-    section.tw h1{
+    section.tw h1,
+    section.th.biz h1{
         font-size: 1.5em;
     }
     
     section.tw p {
         font-size: 1.3em
+    }
+
+    section.th.biz{
+        height: 275dvh;
     }
 }
