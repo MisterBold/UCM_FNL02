@@ -1051,9 +1051,11 @@ footer.foot .inn .inner.textography{
 @media screen and (max-width: 760px) {
     section.tw h1{
         font-size: 2em;
+        width: 90%;
     }
 
-    section.th.home .lft header h2{
+    section.th.home .lft header h2,
+    section.fo header h2{
         font-size: 2.6em;
     }
 
@@ -1140,7 +1142,7 @@ footer.foot .inn .inner.textography{
 
     section.fo header h2{
         text-align: center;
-        transform: translate(0%, 50%);
+        transform: translate(0%, 150%);
     }
 
     .serv .ryt img{
@@ -1247,14 +1249,14 @@ footer.foot .inn .inner.textography{
 
 
 @media screen and (max-height: 740px) {
-    section.tw {
+    section.tw.biz {
         justify-content: space-between;
         padding: 15% 40px;
     }
 
     section.tw h1,
     section.th.biz h1{
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
     
     section.tw p {
