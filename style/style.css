@@ -818,19 +818,24 @@ footer.foot .inn .inner.paragraphs .para main span{
 }
 
 footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a{
-    /* display: inline-flex;
+    display: inline-flex;
     align-items: center;
-    text-decoration: none; */
-    position: relative;
+    text-decoration: none;
+    /* position: relative; */
+    /* width: 150px; */
 }
 
 
-footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a h3{
+/* footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a h3{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a .ico{
+    left: 0px;    
+} */
 
 footer.foot .inn .inner.paragraphs .para.on main a,
 footer.foot .inn .inner.paragraphs .para.tw main a{
@@ -877,7 +882,7 @@ footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a .ico{
 
 footer.foot .inn .inner.paragraphs .para main .main_inn .soc a .ico img{
     object-fit: contain;
-    width: 30px;
+    width: 25px;
     height: auto;
     
 }
