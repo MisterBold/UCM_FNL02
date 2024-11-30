@@ -1254,6 +1254,11 @@ footer.foot .inn .inner.textography{
         justify-content: space-around;
         padding: 30% 40px;
     }
+
+    section.th.biz{
+        height: 200dvh;
+        padding-bottom: 100px;
+    }
 }
 
 
