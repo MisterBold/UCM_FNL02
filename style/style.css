@@ -51,14 +51,14 @@
 }
 
 body > header{
-    padding: 0px 15px;
+    padding: 0px;
     z-index: 5;
     position: fixed;
     top: 0px;
     left: 50%;
     transform: translate(-50%);
 
-    width: 50%;
+    width: 0%;
     height: 5em;
     display: flex;
     justify-content: space-between;
@@ -1114,6 +1114,10 @@ footer.foot .inn .inner.textography{
 
     section.on .wrds p:nth-child(2){
         margin-top: 20px;
+    }
+
+    section.tw.media{
+        height: 125dvh;
     }
 
     section.th.home h1{
