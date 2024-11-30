@@ -1218,6 +1218,14 @@ footer.foot .inn .inner.textography{
     }   
 }
 
+@media screen and (max-width: 360px) {
+
+    section.th.home .lft main.tw p,
+    section.tw p {
+        font-size: 1.25em;
+    }
+}
+
 @media screen and (max-height: 932px) {
     section.tw {
         justify-content: space-around;
@@ -1226,7 +1234,7 @@ footer.foot .inn .inner.textography{
 }
 
 
-@media screen and (max-height: 667px) {
+@media screen and (max-height: 740px) {
     section.tw {
         justify-content: space-between;
         padding: 15% 40px;
@@ -1243,5 +1251,10 @@ footer.foot .inn .inner.textography{
 
     section.th.biz{
         height: 275dvh;
+        grid-template-rows: 5% 1fr;
+    }
+
+    section.th.biz h1 {
+        place-self: flex-end flex-start;
     }
 }
