@@ -361,7 +361,7 @@ section.tw{
 
 section.tw.media{
     height: auto;
-    padding: 120px 100px;
+    padding: 50px 60px;
 }
 
 section.th.biz{
@@ -391,7 +391,7 @@ section.th.biz ul{
     gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
-    padding-bottom: 15px;
+    padding: 30px 0px 15px 0px;
 }
 
 section.th.biz ul li{
@@ -457,9 +457,6 @@ section.th.biz ul li.biz.quote ul li:nth-child(2) video{
 section.th.biz ul li:hover{
     background-position: left bottom;
 }
-
-
-
 
 section.tw ul{
     display: grid;
@@ -678,7 +675,7 @@ section.fo main .cont{
 
 
 .cont{
-    padding: 20px;
+    padding: 27.5px;
     overflow: hidden;
 }
 
@@ -737,7 +734,7 @@ section.fo main .cont{
     position: fixed;
     z-index: 19;
     left: 50%;
-    bottom: 10px;
+    bottom: 15px;
     transform: translate(-50%, 0%);
 
     display: flex;
@@ -932,6 +929,9 @@ footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a h3{
 
 footer.foot .inn .inner.paragraphs .para.th main .main_inn .soc a .ico{
     margin-right: 10px;
+    display: grid;
+    place-items: center;
+    
 }
 
 footer.foot .inn .inner.paragraphs .para main .main_inn .soc a .ico img{
@@ -1260,9 +1260,15 @@ footer.foot .inn .inner.textography{
         font-size: 2.25em;
     }
 
-    section.tw {
+    /* section.tw {
         justify-content: space-between;
         padding: 15% 40px;
+    } */
+
+    section.tw.media{
+        /* height: auto; */
+        height: auto;
+        padding: 50px 30px;
     }
 
     section.th.home .lft main.tw p,
@@ -1307,11 +1313,9 @@ footer.foot .inn .inner.textography{
         justify-content: space-around;
         padding: 30% 40px;
     }
-    }
 
-@media screen and (max-height: 844px) {
-    section.th.biz{
-        /* height: 210dvh; */
+    section.th.biz h1{
+        font-size: 1.75em;
     }
 }
 
@@ -1331,11 +1335,12 @@ footer.foot .inn .inner.textography{
     }
 
     section.th.biz{
-        /* height: 275dvh; */
-        grid-template-rows: 5% 1fr;
+        grid-template-rows: 5% 1fr;    
+        padding: 30px 40px 75px 40px;
+
     }
 
     section.th.biz h1 {
-        place-self: flex-end flex-start;
+        place-self: center flex-start:
     }
 }
