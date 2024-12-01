@@ -359,10 +359,16 @@ section.tw{
     padding: 15% 100px;
 }
 
+section.tw.media{
+    height: auto;
+    padding: 120px 100px;
+}
+
 section.th.biz{
     display: grid;
-    grid-template-rows: 15% 1fr;
-    padding: 0px 40px 50px 40px;
+    grid-template-rows: 130px 1fr;
+    padding: 0px 40px 75px 40px;
+    height: auto;
     
 }
 
@@ -375,6 +381,7 @@ section.tw h1{
 }
 
 section.th.biz h1{
+    margin: 30px 0px;
     place-self: center flex-start;
 }
 
@@ -384,6 +391,7 @@ section.th.biz ul{
     gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
+    padding-bottom: 15px;
 }
 
 section.th.biz ul li{
@@ -412,10 +420,6 @@ section.th.biz ul li.biz.quote{
     justify-content: space-between;
 }
 
-section.th.biz ul li.biz.quote p{
-    /* background: var(--oceanic-noir); */
-}
-
 section.th.biz ul li.biz.quote ul{
     height: 150px;
     display: flex;
@@ -428,7 +432,6 @@ section.th.biz ul li.biz.quote ul li{
     height: 0px;
     background: none;
     box-shadow: none;
-    /* border: 2px solid  var(--forsythia); */
     padding: 20px;
 }
 
@@ -440,19 +443,13 @@ section.th.biz ul li.biz.quote ul li a{
 }
 
 section.th.biz ul li.biz.quote ul li:nth-child(1){
-    /* background: red; */
     transform: translate(0px, 50%);
 }
 
-section.th.biz ul li.biz.quote ul li:nth-child(2){
-    /* background: #31EC69; */
-    /* height: 175px; */
-}
 
 section.th.biz ul li.biz.quote ul li:nth-child(2) video{
     width: 55px;
     height: 55px;
-    /* transform: scale(1.5); */
     border-radius: 50%;
     background: #31EC69;
 }
@@ -1124,10 +1121,9 @@ footer.foot .inn .inner.textography{
         font-size: 2em;
         width: 85%;
     }
-
     
     section.th.biz{
-        height: 165dvh;
+        /* height: 165dvh; */
     }
 
     section.th.biz ul li{
@@ -1225,7 +1221,7 @@ footer.foot .inn .inner.textography{
     footer.foot .inn .inner.paragraphs{
         grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     }
-
+    
     
     footer.foot .inn .inner.paragraphs .para header span{
         font-size: 1em;
@@ -1254,13 +1250,18 @@ footer.foot .inn .inner.textography{
         justify-content: space-around;
         padding: 30% 40px;
     }
-
+    
     section.th.biz{
-        height: 200dvh;
-        padding-bottom: 100px;
+        /* height: 200dvh;   */
+        /* padding-bottom: 100px; */
     }
 }
 
+@media screen and (max-height: 844px) {
+    section.th.biz{
+        /* height: 210dvh; */
+    }
+}
 
 @media screen and (max-height: 740px) {
     section.tw.biz {
@@ -1278,7 +1279,7 @@ footer.foot .inn .inner.textography{
     }
 
     section.th.biz{
-        height: 275dvh;
+        /* height: 275dvh; */
         grid-template-rows: 5% 1fr;
     }
 
