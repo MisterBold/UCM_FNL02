@@ -737,7 +737,7 @@ section.fo main .cont{
     position: fixed;
     z-index: 19;
     left: 50%;
-    bottom: 30px;
+    bottom: 20px;
     transform: translate(-50%, 0%);
 
     display: flex;
