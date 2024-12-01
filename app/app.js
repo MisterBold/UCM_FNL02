@@ -81,7 +81,21 @@ burger.addEventListener('mouseover',()=>{
 
 
 
-mediaQuoteBtn.addEventListener('mouseenter',()=>{
+// mediaQuoteBtn.addEventListener('mouseenter',()=>{
+//     // mediaQuoteIcons.classList.add('icon-present')
+//     mediaQuoteBtn.classList.add('between-space')
+//     mediaQuoteIcons.forEach(quote_icon => {
+//         quote_icon.classList.add('icon-present')
+//         setTimeout(() => {
+//             // mediaQuoteBtn.style.background='springgreen'
+//             quote_icon.classList.add('icon-present-display')
+//         }, 100);
+//     });
+    
+    
+// })
+
+mediaQuoteBtn.addEventListener('click',()=>{
     // mediaQuoteIcons.classList.add('icon-present')
     mediaQuoteBtn.classList.add('between-space')
     mediaQuoteIcons.forEach(quote_icon => {
