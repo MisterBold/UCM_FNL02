@@ -727,6 +727,59 @@ section.fo main .cont{
     transform: rotate(1deg) scale(1.05);
 }
 
+.quote.media{
+    /*expand width to 190px onhover*/
+    /*resting width, without icons on display, to always be 125px*/
+    width: 125px;
+    height: 3em;
+    border-radius: 30px;
+    background: var(--deep-saffron);
+    position: fixed;
+    z-index: 19;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0%);
+
+    display: flex;
+    align-items: center;
+    /*in expanded width, change justification to space-between*/
+    /*resting justification to a'ways be "center" */
+    justify-content: center;
+    padding: 0px 10px;
+    transition: .4s var(--orbit);
+}
+
+.quote.media.between-space{
+    justify-content: space-between;
+}
+
+img.media.quote-icon{
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--nocturnal-expedition);
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s var(--orbit);
+}
+
+img.media.quote-icon.icon-absent{
+    display: none;
+}
+
+img.media.quote-icon.icon-present{
+    display: block;
+    opacity: 1;
+}
+
+.quote.media:hover{
+    &img.media.quote-icon{
+        display: block;
+    }
+
+    width: 190px;
+    cursor: pointer;
+}
+
 /******************************</GALLERY>*******************************************************************/
 
 footer.foot{
@@ -1250,12 +1303,7 @@ footer.foot .inn .inner.textography{
         justify-content: space-around;
         padding: 30% 40px;
     }
-    
-    section.th.biz{
-        /* height: 200dvh;   */
-        /* padding-bottom: 100px; */
     }
-}
 
 @media screen and (max-height: 844px) {
     section.th.biz{
