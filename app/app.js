@@ -79,8 +79,6 @@ burger.addEventListener('mouseover',()=>{
     burger.style.cursor='pointer'
 })
 
-
-
 // mediaQuoteBtn.addEventListener('mouseenter',()=>{
 //     // mediaQuoteIcons.classList.add('icon-present')
 //     mediaQuoteBtn.classList.add('between-space')

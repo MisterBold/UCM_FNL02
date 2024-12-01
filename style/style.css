@@ -755,6 +755,12 @@ section.fo main .cont{
 
 .quote.media.between-space{
     justify-content: space-between;
+    width: 190px;
+    cursor: pointer;
+}
+
+.quote.media:hover{
+    cursor: pointer;
 }
 
 img.media.quote-icon{
@@ -776,11 +782,6 @@ img.media.quote-icon.icon-present{
 
 img.media.quote-icon.icon-present-display{
     opacity: 1;
-}
-
-.quote.media:hover{
-    width: 190px;
-    cursor: pointer;
 }
 
 /******************************</GALLERY>*******************************************************************/
