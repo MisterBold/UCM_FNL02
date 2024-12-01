@@ -82,12 +82,16 @@ burger.addEventListener('mouseover',()=>{
 
 
 mediaQuoteBtn.addEventListener('mouseenter',()=>{
-    // mediaQuoteBtn.style.background='springgreen'
     // mediaQuoteIcons.classList.add('icon-present')
     mediaQuoteBtn.classList.add('between-space')
     mediaQuoteIcons.forEach(quote_icon => {
         quote_icon.classList.add('icon-present')
+        setTimeout(() => {
+            // mediaQuoteBtn.style.background='springgreen'
+            quote_icon.classList.add('icon-present-display')
+        }, 100);
     });
+    
     
 })
 
@@ -95,6 +99,10 @@ mediaQuoteBtn.addEventListener('mouseleave',()=>{
     mediaQuoteBtn.classList.remove('between-space')
     mediaQuoteIcons.forEach(quote_icon => {
         quote_icon.classList.remove('icon-present')
+        setTimeout(() => {
+            quote_icon.classList.remove('icon-present-display')
+            // mediaQuoteBtn.style.background='orange'
+        }, 100);
     });
     // mediaQuoteIcons.classList.remove('icon-present')
     // mediaQuoteBtn.style.background='red'

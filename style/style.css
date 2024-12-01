@@ -745,7 +745,7 @@ section.fo main .cont{
     /*in expanded width, change justification to space-between*/
     /*resting justification to a'ways be "center" */
     justify-content: center;
-    padding: 0px 10px;
+    padding: 0px 5px;
     transition: .4s var(--orbit);
 }
 
@@ -754,12 +754,12 @@ section.fo main .cont{
 }
 
 img.media.quote-icon{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 2px solid var(--nocturnal-expedition);
     border-radius: 50%;
     opacity: 0;
-    transition: .3s var(--orbit);
+    transition: .6s var(--orbit);
 }
 
 img.media.quote-icon.icon-absent{
@@ -768,14 +768,13 @@ img.media.quote-icon.icon-absent{
 
 img.media.quote-icon.icon-present{
     display: block;
+}
+
+img.media.quote-icon.icon-present-display{
     opacity: 1;
 }
 
 .quote.media:hover{
-    &img.media.quote-icon{
-        display: block;
-    }
-
     width: 190px;
     cursor: pointer;
 }
