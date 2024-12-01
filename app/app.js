@@ -97,12 +97,12 @@ burger.addEventListener('mouseover',()=>{
 
 mediaQuoteBtn.addEventListener('click',()=>{
     // mediaQuoteIcons.classList.add('icon-present')
-    mediaQuoteBtn.classList.add('between-space')
+    mediaQuoteBtn.classList.toggle('between-space')
     mediaQuoteIcons.forEach(quote_icon => {
-        quote_icon.classList.add('icon-present')
+        quote_icon.classList.toggle('icon-present')
         setTimeout(() => {
             // mediaQuoteBtn.style.background='springgreen'
-            quote_icon.classList.add('icon-present-display')
+            quote_icon.classList.toggle('icon-present-display')
         }, 100);
     });
     
