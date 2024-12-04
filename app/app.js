@@ -90,7 +90,6 @@ burger.addEventListener('mouseover',()=>{
 //         }, 100);
 //     });
     
-    
 // })
 
 mediaQuoteBtn.addEventListener('click',()=>{
@@ -107,15 +106,15 @@ mediaQuoteBtn.addEventListener('click',()=>{
     
 })
 
-mediaQuoteBtn.addEventListener('mouseleave',()=>{
-    mediaQuoteBtn.classList.remove('between-space')
-    mediaQuoteIcons.forEach(quote_icon => {
-        quote_icon.classList.remove('icon-present')
-        setTimeout(() => {
-            quote_icon.classList.remove('icon-present-display')
-            // mediaQuoteBtn.style.background='orange'
-        }, 100);
-    });
-    // mediaQuoteIcons.classList.remove('icon-present')
-    // mediaQuoteBtn.style.background='red'
-})
+// mediaQuoteBtn.addEventListener('mouseleave',()=>{
+//     mediaQuoteBtn.classList.remove('between-space')
+//     mediaQuoteIcons.forEach(quote_icon => {
+//         quote_icon.classList.remove('icon-present')
+//         setTimeout(() => {
+//             quote_icon.classList.remove('icon-present-display')
+//             // mediaQuoteBtn.style.background='orange'
+//         }, 100);
+//     });
+//     // mediaQuoteIcons.classList.remove('icon-present')
+//     // mediaQuoteBtn.style.background='red'
+// })

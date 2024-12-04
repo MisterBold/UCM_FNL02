@@ -685,11 +685,12 @@ section.fo main .cont{
     align-items: center;
     justify-content: center;
     height: 7em;
-    background: hsl(300, 24%, 90%);
+    background: black;
+    border-radius: 10px;
 }
 
 .cont header h2{
-    color: hsl(300, 24%, 30%);
+    color: white;
     font: clamp(1.3em,2em,3em) pari2024;
     text-transform: uppercase;
 }
@@ -730,7 +731,9 @@ section.fo main .cont{
     width: 125px;
     height: 3em;
     border-radius: 30px;
-    background: var(--deep-saffron);
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+            inset 5px 5px 15px rgba(0, 0, 0, 0.19);
     position: fixed;
     z-index: 19;
     left: 50%;
@@ -742,12 +745,12 @@ section.fo main .cont{
     /*in expanded width, change justification to space-between*/
     /*resting justification to a'ways be "center" */
     justify-content: center;
-    padding: 0px 5px;
+    padding: 0px 7.5px;
     transition: .4s var(--orbit);
 }
 
 .quote.media h3{
-    font: 500 1em Poppins;
+    font: 600 1em Poppins;
 }
 
 .quote.media.between-space{
@@ -761,9 +764,10 @@ section.fo main .cont{
 }
 
 img.media.quote-icon{
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--nocturnal-expedition);
+    width: 30px;
+    height: 30px;
+    overflow: visible;
+    /* border: 2px solid var(--nocturnal-expedition); */
     border-radius: 50%;
     opacity: 0;
     transition: .6s var(--orbit);
@@ -778,7 +782,7 @@ img.media.quote-icon.icon-present{
 }
 
 img.media.quote-icon.icon-present-display{
-    opacity: 1;
+    opacity: .75;
 }
 
 /******************************</GALLERY>*******************************************************************/
