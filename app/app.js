@@ -102,8 +102,13 @@ mediaQuoteBtn.addEventListener('click',()=>{
             quote_icon.classList.toggle('icon-present-display')
         }, 100);
     });
-    
-    
+        
+})
+
+mediaQuoteIcons.forEach(quote_icon => {
+    quote_icon.addEventListener('mouseenter', ()=>{
+        quote_icon.setAttribute('src','../../res/img/whatsapp-logo-variant-black-over.svg')
+    })
 })
 
 // mediaQuoteBtn.addEventListener('mouseleave',()=>{
