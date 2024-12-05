@@ -107,8 +107,27 @@ mediaQuoteBtn.addEventListener('click',()=>{
 
 mediaQuoteIcons.forEach(quote_icon => {
     quote_icon.addEventListener('mouseenter', ()=>{
-        quote_icon.setAttribute('src','../../res/img/whatsapp-logo-variant-black-over.svg')
+        
+        if (quote_icon.getAttribute('alt')=='email icon'){
+            quote_icon.setAttribute('src','../../res/img/email-icon-variant-black-over.svg')
+            // console.log(quote_icon.getAttribute('alt'))
+        } else if (quote_icon.getAttribute('alt')=='whatsapp icon'){
+            quote_icon.setAttribute('src','../../res/img/whatsapp-logo-variant-black-over.svg')
+
+        }
     })
+    
+    quote_icon.addEventListener('mouseleave', ()=>{
+        
+        if (quote_icon.getAttribute('alt')=='email icon'){
+            quote_icon.setAttribute('src','../../res/img/email-icon-variant-black.svg')
+            // console.log(quote_icon.getAttribute('alt'))
+        } else if (quote_icon.getAttribute('alt')=='whatsapp icon'){
+            quote_icon.setAttribute('src','../../res/img/whatsapp-logo-variant-black.svg')
+
+        }
+    })
+
 })
 
 // mediaQuoteBtn.addEventListener('mouseleave',()=>{

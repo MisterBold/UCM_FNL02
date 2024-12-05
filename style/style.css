@@ -773,6 +773,11 @@ img.media.quote-icon{
     transition: .6s var(--orbit);
 }
 
+img.media.quote-icon:nth-child(2){
+    width: 2px;
+    height: 2px;
+}
+
 img.media.quote-icon.icon-absent{
     display: none;
 }
