@@ -486,6 +486,7 @@ section.tw p,
 section.th.biz p{
     margin-top: 1%;
     width: 80%;
+    max-width: 1100px;
     text-align: left;
     font: 100 1.5em Inter;
 }
@@ -1173,10 +1174,6 @@ footer.foot .inn .inner.textography{
         font-size: 2em;
         width: 85%;
     }
-    
-    section.th.biz{
-        /* height: 165dvh; */
-    }
 
     section.th.biz ul li{
         width: 275px;
@@ -1308,9 +1305,15 @@ footer.foot .inn .inner.textography{
         justify-content: space-around;
         padding: 30% 40px;
     }
-
+    
     section.th.biz h1{
         font-size: 1.75em;
+    }
+}
+
+@media screen and (min-height: 932px) {
+    section.tw.media{
+        padding: 100px 60px;
     }
 }
 
@@ -1336,6 +1339,6 @@ footer.foot .inn .inner.textography{
     }
 
     section.th.biz h1 {
-        place-self: center flex-start:
+        place-self: center flex-start;
     }
 }
