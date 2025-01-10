@@ -694,7 +694,7 @@ section.fo main .cont{
     position: fixed;
     z-index: 19;
     left: 50%;
-    bottom: 15px;
+    bottom: 40px;
     transform: translate(-50%, 0%);
 
     display: flex;
@@ -730,9 +730,9 @@ img.media.quote-icon{
     transition: .6s var(--orbit);
 }
 
-img.media.quote-icon:nth-child(2){
-    width: 2px;
-    height: 2px;
+img.media.quote-icon.wa{
+    width: 27.5whapx;
+    height: 27.5px;
 }
 
 img.media.quote-icon.icon-absent{
