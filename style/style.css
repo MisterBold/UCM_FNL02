@@ -442,6 +442,7 @@ section.tw p,
 section.th.biz p{
     margin-top: 1%;
     width: 80%;
+    max-width: 1100px;
     text-align: left;
     font: 100 1.5em Inter;
 }
@@ -1129,10 +1130,6 @@ footer.foot .inn .inner.textography{
         font-size: 2em;
         width: 85%;
     }
-    
-    section.th.biz{
-        /* height: 165dvh; */
-    }
 
     section.th.biz ul li{
         width: 275px;
@@ -1277,6 +1274,12 @@ footer.foot .inn .inner.textography{
     }
 }
 
+@media screen and (min-height: 932px) {
+    section.tw.media{
+        padding: 100px 60px;
+    }
+}
+
 @media screen and (max-height: 740px) {
     section.tw.biz {
         /* justify-content: space-between; */
@@ -1299,6 +1302,7 @@ footer.foot .inn .inner.textography{
     }
 
     section.th.biz h1 {
+        place-self: center flex-start;
         place-self: center flex-start;
     }
 }
