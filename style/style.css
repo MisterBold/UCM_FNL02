@@ -410,50 +410,6 @@ section.th.biz ul li{
     
 }
 
-section.th.biz ul li.biz.quote{
-    padding: 25px 50px;
-    height: auto;
-    /* background: var(--deep-saffron); */
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-section.th.biz ul li.biz.quote ul{
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-section.th.biz ul li.biz.quote ul li{
-    height: 0px;
-    background: none;
-    box-shadow: none;
-    padding: 20px;
-}
-
-section.th.biz ul li.biz.quote ul li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    font: 200 1.3em Inter;
-}
-
-section.th.biz ul li.biz.quote ul li:nth-child(1){
-    transform: translate(0px, 50%);
-}
-
-
-section.th.biz ul li.biz.quote ul li:nth-child(2) video{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background: #31EC69;
-}
-
 section.th.biz ul li:hover{
     background-position: left bottom;
 }
@@ -1253,6 +1209,7 @@ footer.foot .inn .inner.textography{
 @media screen and (max-width: 375px) {
     .serv .lft span{
         font-size: 2.25em;
+        width: 80%;
     }
 
     /* section.tw {
@@ -1304,9 +1261,15 @@ footer.foot .inn .inner.textography{
 }
 
 @media screen and (max-height: 932px) {
-    section.tw {
+    section.tw.home {
         justify-content: space-around;
         padding: 30% 40px;
+    }
+
+    section.tw.biz {
+        justify-content: space-between;
+        padding: 15% 40px;
+        height: auto;
     }
 
     section.th.biz h1{
@@ -1316,8 +1279,8 @@ footer.foot .inn .inner.textography{
 
 @media screen and (max-height: 740px) {
     section.tw.biz {
-        justify-content: space-between;
-        padding: 15% 40px;
+        /* justify-content: space-between; */
+        padding: 5% 40px 15% 40px;
     }
 
     section.tw h1,
@@ -1336,6 +1299,6 @@ footer.foot .inn .inner.textography{
     }
 
     section.th.biz h1 {
-        place-self: center flex-start:
+        place-self: center flex-start;
     }
 }
