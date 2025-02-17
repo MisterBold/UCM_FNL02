@@ -1,26 +1,38 @@
 <?xml version='1.0' encoding="UTF-8"?>
 <urlset xmlns='https://www.sitemaps.org/schemas/sitemap/0.9'>
 
-<!-- __________________ main page ____________________ -->
-<url>
-    <loc>https://ulutshacorporate.media</loc>
-    <lastmod></lastmod>
-</url>
+    <!-- __________________ main page ____________________ -->
+    <url>
+        <loc>http://www.ulutshacorporate.media</loc>
+        <lastmod>2025-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-<!-- __________________ services ____________________ -->
-<url>
-    <loc>https://ulutshacorporate.media/services/career-development</loc>
-    <lastmod></lastmod>
-</url>
-<url>
-    <loc>https://ulutshacorporate.media/services/multimedia-services</loc>
-    <lastmod></lastmod>
-</url>
-<url>
-    <loc>https://ulutshacorporate.media/services/content-creation</loc>
-    <lastmod></lastmod>
-</url>
-<url>
-    <loc>https://ulutshacorporate.media/services/business-development</loc>
-    <lastmod></lastmod>
-</url>
+    <!-- __________________ services ____________________ -->
+    <url>
+        <loc>http://www.ulutshacorporate.media/services/career-development</loc>
+        <lastmod>2025-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.ulutshacorporate.media/services/multimedia-services</loc>
+        <lastmod>2025-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.ulutshacorporate.media/services/content-creation</loc>
+        <lastmod>2025-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.ulutshacorporate.media/services/business-development</loc>
+        <lastmod>2025-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
